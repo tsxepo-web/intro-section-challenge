@@ -14,11 +14,11 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 # Desktop Design
 
-![](/src/assets/desktop.png)
+![](/src/assets/mobile.png)
 
 # Mobile Design
 
-![](/src/assets/mobile.png)
+![](/src/assets/desktop.png)
 
 ### Links
 
