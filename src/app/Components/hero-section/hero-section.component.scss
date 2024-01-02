@@ -1,5 +1,8 @@
 @use "../../themes/variable" as *;
 
+.hero {
+  padding-bottom: 1rem;
+}
 .hero__image--desktop {
   display: none;
 }
@@ -48,7 +51,6 @@
   width: 12%;
 }
 .hero__icon:nth-child(2) {
-  //   height: 15px;
   align-self: flex-end;
 }
 
