@@ -1,0 +1,16 @@
+$font: "Epilogue";
+$file1: "./assets/fonts/Epilogue-Medium";
+$file2: "./assets/fonts/Epilogue-Bold";
+
+@font-face {
+  font-family: $font;
+  src: url($file1 + ".woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font;
+  src: url($file2 + ".woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}

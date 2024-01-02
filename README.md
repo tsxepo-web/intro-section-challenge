@@ -1,27 +1,36 @@
-# IntroSection
+# Frontend Mentor - Product preview card component solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [Author](#author)
 
-## Code scaffolding
+### Screenshot
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Desktop Design
 
-## Build
+![](/src/assets/desktop.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Mobile Design
 
-## Running unit tests
+![](/src/assets/mobile.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Links
 
-## Running end-to-end tests
+- Live Site URL: [intro-section]()
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## My process
 
-## Further help
+### Built with
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- CSS Flexbox
+- [Angular](https://angular.io) - JS framework
+
+## Author
+
+- Frontend Mentor - [@tsxepo-web](https://www.frontendmentor.io/profile/tsxepo-web)

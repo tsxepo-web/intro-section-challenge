@@ -1,0 +1,115 @@
+<header>
+  <div>
+    <button class="nav-toggle" (click)="toggleMenu()">
+      <span class="hamburger"
+        ><img src="../assets/images/icon-menu.svg" alt="hamburger menu"
+      /></span>
+    </button>
+  </div>
+  <a class="logo" href="./"
+    ><img src="../assets/images/logo.svg" alt="snap "
+  /></a>
+  <nav class="nav" [class.nav--visible]="isMenuVisible">
+    <img
+      class="icon__menu"
+      (click)="toggleMenu()"
+      src="../assets/images/icon-close-menu.svg"
+      alt=""
+    />
+    <ul class="nav__list nav__list--left">
+      <li class="nav__item">
+        <button
+          class="nav__link"
+          (click)="toggleDropdown(1); $event.stopPropagation()"
+        >
+          Features
+          <img
+            class="arrow__icon"
+            [src]="
+              isDropdownOpen(1)
+                ? '../assets/images/icon-arrow-up.svg'
+                : '../assets/images/icon-arrow-down.svg'
+            "
+            alt=""
+          />
+        </button>
+        <ul class="dropdown" *ngIf="isDropdownOpen(1)">
+          <li>
+            <a class="dropdown__link" href="./"
+              ><img
+                src="../assets/images/icon-todo.svg"
+                alt=""
+                class="icon"
+              />Todo List</a
+            >
+          </li>
+          <li>
+            <a class="dropdown__link" href="./"
+              ><img
+                src="../assets/images/icon-calendar.svg"
+                alt=""
+                class="icon"
+              />Calendar</a
+            >
+          </li>
+          <li>
+            <a class="dropdown__link" href="./"
+              ><img
+                src="../assets/images/icon-reminders.svg"
+                alt=""
+                class="icon"
+              />Reminders</a
+            >
+          </li>
+          <li>
+            <a class="dropdown__link" href="./"
+              ><img
+                src="../assets/images/icon-planning.svg"
+                alt=""
+                class="icon"
+              />Planning</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <button
+          class="nav__link"
+          (click)="toggleDropdown(2); $event.stopPropagation()"
+        >
+          Company
+          <img
+            class="arrow__icon"
+            [src]="
+              isDropdownOpen(2)
+                ? '../assets/images/icon-arrow-up.svg'
+                : '../assets/images/icon-arrow-down.svg'
+            "
+            alt=""
+          />
+        </button>
+        <ul class="dropdown dropdown--company" *ngIf="isDropdownOpen(2)">
+          <li>
+            <a class="dropdown__link" href="./">History</a>
+          </li>
+          <li>
+            <a class="dropdown__link" href="./">Our Team</a>
+          </li>
+          <li>
+            <a class="dropdown__link" href="./">Blog</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item"><button class="nav__link">Careers</button></li>
+      <li class="nav__item"><button class="nav__link">About</button></li>
+    </ul>
+    <ul class="nav__list nav__list--right">
+      <li class="nav__item nav__item--center">
+        <button class="nav__link">Login</button>
+      </li>
+      <li class="nav__item nav__item--center">
+        <button class="nav__link nav__link--btn">Register</button>
+      </li>
+    </ul>
+  </nav>
+</header>

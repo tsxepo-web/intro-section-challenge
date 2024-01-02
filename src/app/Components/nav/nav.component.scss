@@ -1,0 +1,154 @@
+@use "../../themes/variable" as *;
+
+header {
+  margin: 0 auto;
+  width: 95%;
+  padding: 1rem 0;
+  display: flex;
+}
+.logo {
+  align-self: center;
+  padding-top: 0.5rem;
+  width: 90px;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  transition: opacity 250ms ease;
+
+  position: absolute;
+  right: 0;
+  margin-right: 5%;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+.nav {
+  visibility: hidden;
+  display: none;
+}
+.nav--visible {
+  visibility: visible;
+  height: 100%;
+  position: absolute;
+  background: $white;
+  top: 0;
+  right: 0;
+  width: 50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.icon__menu {
+  width: 10%;
+  align-self: flex-end;
+  padding: 0.5rem 0.5rem 0 0;
+}
+
+.nav__list {
+  padding-left: 0.5em;
+  padding-bottom: 1rem;
+}
+
+.nav__item {
+  line-height: 2rem;
+}
+
+.nav__item--center {
+  text-align: center;
+}
+
+.nav__link {
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  padding-bottom: 1rem;
+}
+.nav__link--btn {
+  border: 1px solid $gray;
+  border-radius: 0.625rem;
+  padding: 0.5rem 1rem;
+  &:hover {
+    border: 1px solid $black;
+  }
+}
+
+.nav__link,
+.dropdown__link,
+.nav__link--btn {
+  &:hover {
+    color: $black;
+  }
+}
+
+.dropdown {
+  line-height: 2rem;
+  margin-left: 1.6rem;
+}
+
+.dropdown__link {
+  font-size: 0.8rem;
+  color: $gray;
+}
+.icon {
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .nav-toggle,
+  .icon__menu {
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .nav__list {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+  .nav__list--left {
+    gap: 2rem;
+  }
+  .nav__list--right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  .nav__link {
+    font-size: 0.8rem;
+    color: $gray;
+  }
+  .dropdown {
+    position: absolute;
+    background: $white;
+    width: 10%;
+    left: 140px;
+    box-shadow: 0 2px $white;
+    border-radius: 10px;
+  }
+  .dropdown--company {
+    left: 250px;
+  }
+  .dropdown__link {
+    padding: 1rem;
+  }
+}

@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./app/themes/variable" as *;
+@use "./app/themes/fonts" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Epilogue", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  color: $gray;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
